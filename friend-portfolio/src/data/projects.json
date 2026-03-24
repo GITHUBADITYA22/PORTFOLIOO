@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "AI Image Generator",
+    "description": "A full-stack web application that generates images from text prompts using OpenAI's DALL-E API. Includes user authentication and a gallery to save generated images.",
+    "stack": ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    "features": ["User Authentication (JWT)", "Image Generation & Saving", "Responsive Gallery UI"],
+    "github": "https://github.com",
+    "demo": "https://demo.com",
+    "image": "https://images.unsplash.com/photo-1678286271598-2b8006e8b4e7?w=800&q=80",
+    "duration": "Feb 2026 - Mar 2026",
+    "category": "Web Development"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Dashboard",
+    "description": "An interactive dashboard for visualizing machine learning model performance metrics, dataset analysis, and hyperparameter tuning results.",
+    "stack": ["Python", "Streamlit", "Pandas", "Scikit-Learn", "Matplotlib"],
+    "features": ["Real-time Data Visualization", "Model Comparison", "Interactive Filtering"],
+    "github": "https://github.com",
+    "demo": "https://demo.com",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    "duration": "Dec 2025 - Jan 2026",
+    "category": "Machine Learning"
+  },
+  {
+    "id": 3,
+    "title": "Cloud Resume API",
+    "description": "A serverless REST API built on AWS to serve portfolio data dynamically. Automatically deployed using CI/CD pipelines.",
+    "stack": ["AWS Lambda", "API Gateway", "DynamoDB", "GitHub Actions", "Python"],
+    "features": ["Serverless Architecture", "Automated Deployment", "High Availability"],
+    "github": "https://github.com",
+    "demo": "https://demo.com",
+    "image": "https://images.unsplash.com/photo-1620912189855-3221ea841eee?w=800&q=80",
+    "duration": "Oct 2025 - Nov 2025",
+    "category": "DevOps"
+  },
+  {
+    "id": 4,
+    "title": "Algorithm Visualizer",
+    "description": "A web application that visualizes various sorting and pathfinding algorithms, making learning Data Structures and Algorithms engaging.",
+    "stack": ["React", "JavaScript", "CSS Animations", "Vite"],
+    "features": ["Sorting Visualizations", "Pathfinding Algorithms", "Adjustable Speed"],
+    "github": "https://github.com",
+    "demo": "https://demo.com",
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80",
+    "duration": "Aug 2025 - Sep 2025",
+    "category": "DSA"
+  }
+]
