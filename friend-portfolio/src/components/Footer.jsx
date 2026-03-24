@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="w-full bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-12 pb-8 mt-auto">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
-          
+
           <div className="space-y-2">
             <h3 className="text-xl font-bold heading-gradient">Portfolio.</h3>
             <p className="text-slate-500 dark:text-slate-400 text-sm max-w-sm">
@@ -18,13 +18,13 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-5">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+            <a href="https://github.com/GITHUBADITYA22" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               <FaGithub size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/aditya-kumar-b20650293/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
+            <a href="https://leetcode.com/u/adittyarajputt/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
               <SiLeetcode size={24} />
             </a>
             <a href="https://hackerrank.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors">
@@ -36,10 +36,10 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-500 dark:text-slate-400 text-sm">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Aditya Kumar. All rights reserved.
           </p>
           <div className="text-slate-500 dark:text-slate-400 text-sm mt-4 md:mt-0">
-            Visitor Count: <span className="font-mono font-bold text-blue-500">1,204</span>
+            Visitor Count: <span className="font-mono font-bold text-blue-500">15</span>
           </div>
         </div>
       </div>

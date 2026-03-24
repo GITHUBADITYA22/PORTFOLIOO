@@ -1,26 +1,17 @@
 [
   {
     "id": 1,
-    "company": "Tech Innovators Inc.",
-    "role": "Software Engineering Intern",
-    "duration": "May 2025 - Jul 2025",
+    "company": "Summer Internship",
+    "role": "Application Development Intern (Java)",
+    "duration": "June 2025",
     "responsibilities": [
-      "Developed interactive REST APIs using Node.js and Express.",
-      "Optimized database queries resulting in a 20% reduction in load times.",
-      "Collaborated with frontend developers to integrate React components."
+      "Developed basic application features using Java.",
+      "Worked on understanding core concepts of application development and backend logic.",
+      "Practiced problem-solving and debugging in Java-based programs.",
+      "Gained hands-on exposure to real-world development workflow."
     ],
-    "technologies": ["Node.js", "Express", "MongoDB", "React"]
-  },
-  {
-    "id": 2,
-    "company": "Open Source Foundation",
-    "role": "Contributor",
-    "duration": "Jan 2025 - Present",
-    "responsibilities": [
-      "Fixed critical bugs and implemented new features in open-source libraries.",
-      "Improved documentation for setup and API reference.",
-      "Participated in code reviews for PRs from community members."
-    ],
-    "technologies": ["JavaScript", "Python", "Git", "Markdown"]
+    "technologies": [
+      "Java"
+    ]
   }
 ]

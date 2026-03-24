@@ -7,6 +7,7 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
+import Certifications from './sections/Certifications';
 import Achievements from './sections/Achievements';
 import Contact from './sections/Contact';
 
@@ -24,6 +25,7 @@ function App() {
           <Skills />
           <Projects />
           <Experience />
+          <Certifications />
           <Achievements />
           <Contact />
         </main>

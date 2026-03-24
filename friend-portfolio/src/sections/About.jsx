@@ -25,16 +25,15 @@ const About = () => {
             className="flex-1 space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-lg"
           >
             <p>
-              I am a final year <strong>B.Tech Computer Science</strong> student at XYZ University. 
-              My journey in tech started with a curiosity to understand how things work behind the scenes, 
-              which quickly blossomed into a profound passion for Software Development and Machine Learning.
+              I am a B.Tech Computer Science student at <strong>Lovely Professional University</strong>, with a strong focus on full-stack development and building real-world web applications. I enjoy working on practical projects that solve real problems and improve user experience.
             </p>
+
             <p>
-              My goal is to leverage my skills in <strong>Full Stack Development, Machine Learning, and DevOps</strong> to build robust, scalable applications that solve real-world problems. 
-              I thrive in collaborative environments and am constantly looking for opportunities to learn and grow.
+              I have developed applications such as an AI-powered Science Project Advisor and a full-stack recipe platform, gaining hands-on experience with technologies like JavaScript, PHP, Python, and modern web frameworks. Alongside development, I actively practice Data Structures and Algorithms to strengthen my problem-solving skills for technical interviews.
             </p>
+
             <p>
-              When I'm not coding, you'll find me exploring new tech trends, participating in hackathons, or reading about the latest AI advancements.
+              Currently, I am working on more advanced and scalable projects, including a real estate platform, to improve my development and system design abilities. My goal is to become a skilled software developer capable of building efficient and impactful applications.
             </p>
           </motion.div>
 
@@ -47,12 +46,12 @@ const About = () => {
           >
             <div className="glass-effect rounded-2xl p-8 space-y-6 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl"></div>
-              
+
               <div>
                 <h3 className="text-xl font-bold text-slate-800 dark:text-slate-200 mb-2">Education</h3>
                 <div className="pb-4 border-b border-slate-200 dark:border-slate-700">
                   <p className="font-semibold text-blue-600 dark:text-blue-400 text-lg">B.Tech in Computer Science</p>
-                  <p className="text-slate-500 dark:text-slate-400">XYZ University • 2022 - 2026</p>
+                  <p className="text-slate-500 dark:text-slate-400">Lovely Professional University • 2023- 2027</p>
                 </div>
               </div>
 

@@ -1,57 +1,96 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
-import { SiLeetcode } from 'react-icons/si';
+import { FaGithub, FaLinkedin, FaHackerrank, FaJava, FaGitAlt, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { SiLeetcode, SiJavascript, SiPython, SiReact, SiNodedotjs, SiMongodb, SiMysql, SiTailwindcss, SiCplusplus, SiExpress } from 'react-icons/si';
 import { Download, ArrowRight } from 'lucide-react';
+
+const techIcons = [
+  { Icon: SiJavascript, color: 'text-yellow-400', size: 32, top: '15%', left: '8%', delay: 0 },
+  { Icon: SiPython, color: 'text-blue-500', size: 40, top: '25%', left: '85%', delay: 0.5 },
+  { Icon: SiReact, color: 'text-cyan-400', size: 48, top: '75%', left: '12%', delay: 1 },
+  { Icon: SiNodedotjs, color: 'text-green-500', size: 36, top: '80%', left: '80%', delay: 1.5 },
+  { Icon: SiMongodb, color: 'text-green-600', size: 32, top: '40%', left: '92%', delay: 2 },
+  { Icon: FaJava, color: 'text-orange-500', size: 44, top: '55%', left: '6%', delay: 2.5 },
+  { Icon: SiMysql, color: 'text-blue-600', size: 36, top: '12%', left: '45%', delay: 3 },
+  { Icon: FaGitAlt, color: 'text-red-500', size: 32, top: '65%', left: '88%', delay: 3.5 },
+  { Icon: SiTailwindcss, color: 'text-cyan-500', size: 36, top: '60%', left: '48%', delay: 4 },
+  { Icon: SiCplusplus, color: 'text-blue-500', size: 32, top: '35%', left: '15%', delay: 4.5 },
+  { Icon: SiExpress, color: 'text-gray-500 dark:text-gray-300', size: 32, top: '5%', left: '70%', delay: 5 },
+  { Icon: FaHtml5, color: 'text-orange-600', size: 32, top: '85%', left: '30%', delay: 5.5 },
+  { Icon: FaCss3Alt, color: 'text-blue-500', size: 32, top: '30%', left: '50%', delay: 6 },
+];
+import profileImg from '../assets/aditya.png';
+import resumePDF from '../assets/adicvv.pdf';
 
 const Hero = () => {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="min-h-screen flex items-center justify-center section-padding relative overflow-hidden pt-24"
     >
       {/* Background decoration */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
 
+      {/* Floating Tech Icons */}
+      {techIcons.map((item, index) => (
+        <motion.div
+          key={index}
+          className="absolute z-0 hidden lg:block opacity-60 dark:opacity-40"
+          style={{ top: item.top, left: item.left }}
+          animate={{
+            y: [0, -20, 0],
+            rotate: [-10, 10, -10],
+          }}
+          transition={{
+            duration: 6,
+            repeat: Infinity,
+            delay: item.delay,
+            ease: "easeInOut"
+          }}
+        >
+          <item.Icon className={`drop-shadow-lg ${item.color}`} size={item.size} />
+        </motion.div>
+      ))}
+
       <div className="flex flex-col md:flex-row items-center justify-between w-full gap-12">
-        
+
         {/* Text Content */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="flex-1 space-y-6 text-center md:text-left z-10"
         >
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.8 }}
             className="inline-block px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 font-medium text-sm mb-4"
           >
-            B.Tech Computer Science Student
+            Building Real-World Web Applications
           </motion.div>
-          
+
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Hi, I'm <br />
-            <span className="heading-gradient">John Doe</span>
+            <span className="heading-gradient">Aditya Kumar</span>
           </h1>
-          
+
           <h2 className="text-2xl md:text-3xl font-medium text-slate-700 dark:text-slate-300">
-            Software Developer | ML Enthusiast
+            Full-Stack Developer | DSA Enthusiast | Problem Solver
           </h2>
-          
+
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed">
-            Passionate about building scalable web applications and exploring the cutting edge of Machine Learning. Turning complex problems into elegant solutions.
+            I develop real-world web applications using modern technologies, including AI-based tools and full-stack platforms. Actively solving DSA problems and building projects focused on performance and scalability.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
-            <Link 
-              to="projects" 
-              spy={true} 
-              smooth={true} 
-              offset={-70} 
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
               duration={500}
             >
               <button className="flex items-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-all shadow-lg hover:shadow-blue-500/30 w-full sm:w-auto">
@@ -59,9 +98,9 @@ const Hero = () => {
                 <ArrowRight size={18} />
               </button>
             </Link>
-            <a 
-              href="/resume.pdf" 
-              download 
+            <a
+              href={resumePDF}
+              download="Aditya_Resume.pdf"
               className="flex items-center gap-2 px-8 py-3.5 bg-white dark:bg-slate-800 text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700 hover:border-blue-500 rounded-full font-medium transition-all w-full sm:w-auto justify-center"
             >
               <Download size={18} />
@@ -87,27 +126,21 @@ const Hero = () => {
         </motion.div>
 
         {/* Profile Image */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex-1 w-full max-w-[400px] aspect-square relative z-10 hidden md:block"
         >
-          <div className="w-full h-full rounded-full p-2 bg-gradient-to-tr from-blue-500 to-purple-500 relative">
-            <div className="w-full h-full rounded-full overflow-hidden border-4 border-background bg-slate-200 dark:bg-slate-800">
+          <div className="w-full h-full rounded-full p-2 bg-gradient-to-tr from-blue-500 to-purple-500 relative mx-auto flex items-center justify-center">
+            <div className="w-full h-full rounded-full overflow-hidden border-4 border-background bg-slate-200 dark:bg-slate-800 flex items-center justify-center">
               {/* Replace with actual image later */}
-              <img 
-                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=800&q=80" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
+              <img
+                src={profileImg}
+                alt="Profile"
+                className="w-full h-full object-cover object-[50%_30%]"
               />
             </div>
-          </div>
-          <div className="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 animate-bounce">
-            <span className="text-2xl">💻</span>
-          </div>
-          <div className="absolute top-10 -right-6 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-xl border border-slate-100 dark:border-slate-700 animate-bounce" style={{ animationDelay: '1s' }}>
-            <span className="text-2xl">🚀</span>
           </div>
         </motion.div>
 
